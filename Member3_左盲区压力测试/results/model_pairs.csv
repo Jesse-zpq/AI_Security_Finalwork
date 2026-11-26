@@ -1,0 +1,7 @@
+﻿run_id,backend,matched_run,L_in_world,observed_at_0,action_at_0,left_decision,left_reject_reason,takeover_request_s,handover_s,fallback,fallback_s,left_lane_follow_s,first_below_stop_speed_s,collision_actor,collision_s,outcome,end_s,first2s_front_gap_m,first2s_rear_gap_m,first2s_left_gap_m,first2s_right_gap_m,first2s_longitudinal_ttc_s,first2s_ego_acceleration_mps2,full_front_gap_m,full_rear_gap_m,full_left_gap_m,full_right_gap_m,full_longitudinal_ttc_s,full_ego_acceleration_mps2
+P2-A,model,T1-A,True,F/R/Bk,left_change,left_accepted,,,,,,,,L,1.9,collision,1.9,35.439086,-0.260914,-0.474393,,0.017326,0.0,35.439086,-0.260914,-0.474393,,0.017326,0.0
+T1-A,model,P2-A,False,F/R/Bk,left_change,left_accepted,,,,,,3.5,,,,observation_limit,25.0,35.189736,51.039736,,,7.037947,0.0,35.189736,51.039736,,1.8,7.037947,0.0
+P2-B,model,T1-B,True,F/R/Bk,in_lane_stop,not_evaluated,,,,in_lane_stop,0.0,,6.2,,,stopped_middle,9.75,41.875,43.0,1.8,,4.3,-4.0,41.875,6.225,1.8,1.8,1.657609,-4.0
+T1-B,model,P2-B,False,F/R/Bk,in_lane_stop,not_evaluated,,,,in_lane_stop,0.0,,6.2,,,stopped_middle,9.75,41.875,43.0,,,4.3,-4.0,41.875,6.225,,1.8,1.657609,-4.0
+P2-C,model,T1-C,True,F/R/Bk,wait,left_rejected,left_observation_unknown,0.0,,in_lane_stop,4.5,,10.0,,,stopped_middle,13.5,35.175726,50.824274,1.8,,7.709151,-0.879556,26.636009,50.041129,1.8,1.8,7.709151,-4.0
+T1-C,model,P2-C,False,F/R/Bk,wait,left_rejected,left_observation_unknown,0.0,,in_lane_stop,4.5,,10.0,,,stopped_middle,13.5,35.175726,50.824274,,,7.709151,-0.879556,26.636009,50.041129,,1.8,7.709151,-4.0
