@@ -1,0 +1,2202 @@
+{
+  "suite": "formal",
+  "backend": "carla",
+  "carla_version": "1.0",
+  "parameters": {
+    "physics_step_s": 0.05,
+    "decision_step_s": 0.1,
+    "fault_at_s": 0.0,
+    "horizon_s": 25.0,
+    "post_stop_observation_s": 3.0,
+    "max_wait_s": 5.0,
+    "mrm_launch_margin_s": 0.3,
+    "handover_buffer_s": 0.5,
+    "lateral_segment_s": 3.5,
+    "braking_target_mps2": -4.0,
+    "mild_braking_target_mps2": -2.0,
+    "nominal_follow_desired_speed_mps": 25.0,
+    "nominal_follow_standoff_m": 5.0,
+    "nominal_follow_headway_s": 1.4,
+    "nominal_follow_speed_gain_per_s": 0.6,
+    "nominal_follow_gap_gain_per_s2": 0.3,
+    "predicted_rear_response_delay_s": [
+      1.5,
+      2.0
+    ],
+    "predicted_rear_braking_magnitude_mps2": [
+      5.0,
+      5.5
+    ],
+    "longitudinal_clearance_margin_m": 2.0,
+    "lateral_clearance_margin_m": 0.2,
+    "fallback_score_tie_margin_m": 0.2,
+    "left_prior_x_m": [
+      -30.0,
+      -15.0
+    ],
+    "left_prior_v_mps": [
+      32.0,
+      34.0
+    ],
+    "left_prior_lane_center_offset_m": 0.3,
+    "brake_pedal_scale_mps2": 15.0
+  },
+  "runs": [
+    {
+      "run_id": "N1-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.86813679913793,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.930634134886105,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119938082153914,
+          "time_s": 1.95,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.092126939849438,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5490722656249987,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.117736921203228,
+          "time_s": 23.45,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.021918060068316,
+          "time_s": 2.65,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5118467554856423,
+          "time_s": 2.95,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.510897211978242,
+          "time_s": 10.6,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.092126939849438,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5490722656249987,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_rejected",
+          "trigger": {
+            "object": "L",
+            "time_s": 1.7000000000000002
+          },
+          "observed": [
+            "F",
+            "L",
+            "R",
+            "Bk"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "N2-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.88591129976817,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.91909315680115,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5117499056657202,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.107048144216423,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.116411784379444,
+          "time_s": 22.05,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.01309199685675,
+          "time_s": 2.65,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5113397678188405,
+          "time_s": 3.1,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5104761005677299,
+          "time_s": 11.35,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.107048144216423,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": []
+    },
+    {
+      "run_id": "P1-A",
+      "outcome": "collision",
+      "collision": true,
+      "first_collision": {
+        "other": "L",
+        "time_s": 2.0,
+        "frame": 1205,
+        "source": "carla_sensor"
+      },
+      "terminal_time_s": 2.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.357000432699934,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": -0.5119909369579698,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "left_gap_m": {
+          "value": -0.9965491802546698,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.02492362209344038,
+          "time_s": 1.9,
+          "actor": "L"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.15090942382812486,
+          "time_s": 1.2,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 35.357000432699934,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": -0.5119909369579698,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "left_gap_m": {
+          "value": -0.9965491802546698,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.02492362209344038,
+          "time_s": 1.9,
+          "actor": "L"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.15090942382812486,
+          "time_s": 1.2,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_accepted",
+          "trigger": null,
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        },
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        }
+      ]
+    },
+    {
+      "run_id": "P1-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.39908172813134,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.03497709233576,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512015080569158,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 4.350757997224129,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.39908172813134,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.729838635664985,
+          "time_s": 7.9,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512015080569158,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5106214912648,
+          "time_s": 4.8,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.817932754041151,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": -0.000148773193359375,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "P1-C",
+      "outcome": "scripted_handover",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 2.5,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.85019031576519,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.92428052870064,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5117688258177546,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.081503469421909,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5858459472656306,
+          "time_s": 1.65,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 34.03828768324916,
+          "time_s": 2.5,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.07527234393875,
+          "time_s": 2.5,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5115164408686526,
+          "time_s": 2.5,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.081503469421909,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5858459472656306,
+          "time_s": 1.65,
+          "actor": null
+        },
+        "observed_until_s": 2.5,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_rejected",
+          "trigger": "left_observation_unknown",
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        },
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.7,
+          "trigger": "wait_cap"
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        },
+        {
+          "time_s": 2.0,
+          "event": "scripted_transfer_started"
+        },
+        {
+          "time_s": 2.5,
+          "event": "scripted_handover"
+        }
+      ]
+    },
+    {
+      "run_id": "P2-A",
+      "outcome": "collision",
+      "collision": true,
+      "first_collision": {
+        "other": "L",
+        "time_s": 2.0,
+        "frame": 1545,
+        "source": "carla_sensor"
+      },
+      "terminal_time_s": 2.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.35677301155046,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": -0.5113934501348556,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "left_gap_m": {
+          "value": -0.9982700575807351,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.024928075383290567,
+          "time_s": 1.9,
+          "actor": "L"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.1480865478515625,
+          "time_s": 0.05,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 35.35677301155046,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": -0.5113934501348556,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "left_gap_m": {
+          "value": -0.9982700575807351,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.024928075383290567,
+          "time_s": 1.9,
+          "actor": "L"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.1480865478515625,
+          "time_s": 0.05,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_accepted",
+          "trigger": null,
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "P2-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.39303758057325,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.0336126940795,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119289096215676,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 4.3504615074615645,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.39303758057325,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.75128302734183,
+          "time_s": 7.8,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119079277342027,
+          "time_s": 2.15,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.511743768397904,
+          "time_s": 4.8,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.8181055990108699,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": 0.000453948974609375,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "P2-C",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 13.7,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.86911446966508,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.905242006864015,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512018766721651,
+          "time_s": 1.8,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.085440596582927,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5600585937499987,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 28.38029630915718,
+          "time_s": 5.1,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 49.999713884257666,
+          "time_s": 2.7,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119076368169928,
+          "time_s": 2.5,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5115967994745176,
+          "time_s": 8.05,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.085440596582927,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.593048095703141,
+          "time_s": 4.75,
+          "actor": null
+        },
+        "observed_until_s": 13.7,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_rejected",
+          "trigger": "left_observation_unknown",
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        },
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.7,
+          "trigger": "wait_cap"
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 4.7,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "candidates_rejected": {
+            "shoulder_stop": {
+              "object": "R",
+              "time_s": 10.100000000000001
+            }
+          },
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 13.7,
+          "event": "observed_stop",
+          "y_m": -0.0006046295166015625,
+          "parked_region": "middle",
+          "first_below_threshold_s": 10.2
+        }
+      ]
+    },
+    {
+      "run_id": "P3-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.885893279161216,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.918650064775825,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119999208400219,
+          "time_s": 1.95,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.107067377197742,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.1174567986834,
+          "time_s": 22.95,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.01134972314219,
+          "time_s": 2.65,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5118541874227898,
+          "time_s": 2.55,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5110584321120744,
+          "time_s": 9.35,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.107067377197742,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        }
+      ]
+    },
+    {
+      "run_id": "P3-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.398956902174085,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.03459562301143,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512033733590651,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 4.350669095132561,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.398956902174085,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.753874980669064,
+          "time_s": 7.8,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512033733590651,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5113196544211713,
+          "time_s": 4.8,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.8184453603666557,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": -0.00014829635620117188,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "P3-C",
+      "outcome": "scripted_handover",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 2.5,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.89291711026999,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.910925908336836,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120226401581514,
+          "time_s": 1.7,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.066168281475855,
+          "time_s": 1.35,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.55628204345703,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 34.07577870435284,
+          "time_s": 2.5,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.06830137950911,
+          "time_s": 2.5,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119068831922728,
+          "time_s": 2.5,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.066168281475855,
+          "time_s": 1.35,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.55628204345703,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.5,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.7,
+          "trigger": "wait_cap"
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 2.0,
+          "event": "driver_ready"
+        },
+        {
+          "time_s": 2.0,
+          "event": "scripted_transfer_started"
+        },
+        {
+          "time_s": 2.5,
+          "event": "scripted_handover"
+        }
+      ]
+    },
+    {
+      "run_id": "P4-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.88591022575609,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.91883375843709,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5117473178208156,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.107086316745017,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.118294347792645,
+          "time_s": 23.4,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.020780085707216,
+          "time_s": 2.65,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.511238375686598,
+          "time_s": 3.1,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.510978227065018,
+          "time_s": 10.2,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.107086316745017,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5419006347656237,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": []
+    },
+    {
+      "run_id": "P4-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.394122510251776,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.03512205199003,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512014415536973,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 4.350762584918291,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.394122510251776,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.754589113931139,
+          "time_s": 7.8,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512014415536973,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5113321190797415,
+          "time_s": 4.45,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.818728636881741,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": -0.000148773193359375,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "P4-C",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 13.7,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.891405589129306,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.907784389596046,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119939474658128,
+          "time_s": 1.95,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.100653389307256,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.555519104003905,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 28.390784853239406,
+          "time_s": 5.1,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.00509593367606,
+          "time_s": 2.7,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5118527537056647,
+          "time_s": 2.55,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5122768519540042,
+          "time_s": 8.05,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.100653389307256,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.593353271484391,
+          "time_s": 4.75,
+          "actor": null
+        },
+        "observed_until_s": 13.7,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.7,
+          "trigger": "wait_cap"
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 4.7,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "candidates_rejected": {
+            "shoulder_stop": {
+              "object": "R",
+              "time_s": 10.100000000000001
+            }
+          },
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 13.7,
+          "event": "observed_stop",
+          "y_m": 0.0002818107604980469,
+          "parked_region": "middle",
+          "first_below_threshold_s": 10.2
+        }
+      ]
+    },
+    {
+      "run_id": "T1-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.40242096037782,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 51.22107607256481,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 7.285445715541863,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.1480865478515625,
+          "time_s": 0.05,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 35.16074109822351,
+          "time_s": 2.05,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 51.14153058253532,
+          "time_s": 2.05,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": {
+          "value": 1.4952304372246452,
+          "time_s": 9.25,
+          "actor": "F"
+        },
+        "longitudinal_ttc_s": {
+          "value": 7.22688008522231,
+          "time_s": 2.05,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -0.1480865478515625,
+          "time_s": 0.05,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_accepted",
+          "trigger": null,
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "T1-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.398926403444385,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.04423915017461,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 4.352146715206907,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.398926403444385,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.843604758664002,
+          "time_s": 7.5,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": {
+          "value": 1.5118865502678576,
+          "time_s": 4.2,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.8194924906692653,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": 0.000518798828125,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "T1-C",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 13.7,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.897400756613706,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.90706543156065,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 8.105542478320983,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.55384063720703,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 28.37172404278634,
+          "time_s": 5.1,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.00298972100416,
+          "time_s": 2.7,
+          "actor": "Bk"
+        },
+        "left_gap_m": null,
+        "right_gap_m": {
+          "value": 1.511853415307514,
+          "time_s": 8.05,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.105542478320983,
+          "time_s": 1.3,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.59285736083986,
+          "time_s": 4.75,
+          "actor": null
+        },
+        "observed_until_s": 13.7,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "left_rejected",
+          "trigger": "left_observation_unknown",
+          "observed": [
+            "F",
+            "R",
+            "Bk"
+          ]
+        },
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.7,
+          "trigger": "wait_cap"
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 4.7,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "candidates_rejected": {
+            "shoulder_stop": {
+              "object": "R",
+              "time_s": 10.100000000000001
+            }
+          },
+          "deadline_s": 4.7
+        },
+        {
+          "time_s": 13.7,
+          "event": "observed_stop",
+          "y_m": 0.0007672309875488281,
+          "parked_region": "middle",
+          "first_below_threshold_s": 10.2
+        }
+      ]
+    },
+    {
+      "run_id": "T2-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.88652697129277,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 50.91126201583673,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120686476786105,
+          "time_s": 1.7,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5119739552245295,
+          "time_s": 1.65,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.107652322320138,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5415191650390612,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.115470995071746,
+          "time_s": 21.85,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 49.891846661000486,
+          "time_s": 2.7,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119169970658275,
+          "time_s": 3.1,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5117506366538125,
+          "time_s": 4.6,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 8.107652322320138,
+          "time_s": 1.2,
+          "actor": "F"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5415191650390612,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": []
+    },
+    {
+      "run_id": "T2-B",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.39939176682187,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.034345515016796,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.511930415774426,
+          "time_s": 2.0,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5119559632605508,
+          "time_s": 1.95,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 4.350635420750588,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.39939176682187,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.752221078075522,
+          "time_s": 7.8,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119079553440926,
+          "time_s": 2.15,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5119559632605508,
+          "time_s": 1.95,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.8180505454749636,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": 0.0005145072937011719,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "T2-C",
+      "outcome": "stopped_middle",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 9.8,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.39802674516452,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 43.034610881853254,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120294202189197,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5119513650030245,
+          "time_s": 2.0,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 4.3506765102588245,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.39802674516452,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 6.83521472422532,
+          "time_s": 7.5,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120294202189197,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5119107567087937,
+          "time_s": 2.3,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 1.8182825556600688,
+          "time_s": 6.35,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 9.8,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 1.9,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 9.5
+            },
+            "shoulder_stop": {
+              "object": "R",
+              "time_s": 3.8000000000000003
+            }
+          }
+        },
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "candidates_rejected": {
+            "shoulder_stop": {
+              "object": "R",
+              "time_s": 1.7000000000000002
+            }
+          },
+          "deadline_s": 1.9
+        },
+        {
+          "time_s": 9.8,
+          "event": "observed_stop",
+          "y_m": -0.00032138824462890625,
+          "parked_region": "middle",
+          "first_below_threshold_s": 6.3
+        }
+      ]
+    },
+    {
+      "run_id": "T3-A",
+      "outcome": "observation_limit",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 25.0,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.86628932557034,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 10.937925137912924,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120183456652652,
+          "time_s": 1.7,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 3.7967411884237836,
+          "time_s": 1.95,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5849304199218737,
+          "time_s": 1.55,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 23.116140146405588,
+          "time_s": 21.9,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 10.02634362525384,
+          "time_s": 2.7,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5119185220358782,
+          "time_s": 2.5,
+          "actor": "L"
+        },
+        "right_gap_m": {
+          "value": 1.5112610196014886,
+          "time_s": 9.35,
+          "actor": "R"
+        },
+        "longitudinal_ttc_s": {
+          "value": 3.7967411884237836,
+          "time_s": 1.95,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5849304199218737,
+          "time_s": 1.55,
+          "actor": null
+        },
+        "observed_until_s": 25.0,
+        "first_outside_corridor_s": null
+      },
+      "events": []
+    },
+    {
+      "run_id": "T3-B",
+      "outcome": "collision",
+      "collision": true,
+      "first_collision": {
+        "other": "Bk",
+        "time_s": 2.35,
+        "frame": 6428,
+        "source": "carla_sensor"
+      },
+      "terminal_time_s": 2.35,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 42.39413776902625,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 3.0347348504998815,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512015952049575,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.3067994355810166,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 42.39413776902625,
+          "time_s": 1.15,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 0.10568151257214353,
+          "time_s": 2.35,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.512015952049575,
+          "time_s": 1.3,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 0.012861247447582954,
+          "time_s": 2.3,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.4129943847656214,
+          "time_s": 0.4,
+          "actor": null
+        },
+        "observed_until_s": 2.35,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "fallback_started",
+          "action": "in_lane_stop",
+          "trigger": "immediate_braking_baseline"
+        }
+      ]
+    },
+    {
+      "run_id": "T3-C",
+      "outcome": "stopped_shoulder",
+      "collision": false,
+      "first_collision": null,
+      "terminal_time_s": 18.95,
+      "shared_window_s": {
+        "front_gap_m": {
+          "value": 35.8972978248994,
+          "time_s": 2.0,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 10.906993837392612,
+          "time_s": 2.0,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.5120201406972607,
+          "time_s": 1.7,
+          "actor": "L"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 3.8263671508253445,
+          "time_s": 1.95,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -1.5539169311523424,
+          "time_s": 1.45,
+          "actor": null
+        },
+        "observed_until_s": 2.0,
+        "first_outside_corridor_s": null
+      },
+      "until_endpoint": {
+        "front_gap_m": {
+          "value": 27.178099369140018,
+          "time_s": 4.65,
+          "actor": "F"
+        },
+        "rear_gap_m": {
+          "value": 10.006649339140578,
+          "time_s": 2.65,
+          "actor": "Bk"
+        },
+        "left_gap_m": {
+          "value": 1.198984832036364,
+          "time_s": 11.2,
+          "actor": "R"
+        },
+        "right_gap_m": null,
+        "longitudinal_ttc_s": {
+          "value": 3.8263671508253445,
+          "time_s": 1.95,
+          "actor": "Bk"
+        },
+        "ego_acceleration_mps2": {
+          "value": -4.307327270507904,
+          "time_s": 9.6,
+          "actor": null
+        },
+        "observed_until_s": 18.95,
+        "first_outside_corridor_s": null
+      },
+      "events": [
+        {
+          "time_s": 0.0,
+          "event": "deadline_updated",
+          "deadline_s": 4.2,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 5.700000000000001
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 6.6000000000000005
+            }
+          }
+        },
+        {
+          "time_s": 0.0,
+          "event": "takeover_requested",
+          "deadline_s": 4.2
+        },
+        {
+          "time_s": 0.9,
+          "event": "deadline_updated",
+          "deadline_s": 4.1,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 5.6
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 6.5
+            }
+          }
+        },
+        {
+          "time_s": 1.3,
+          "event": "deadline_updated",
+          "deadline_s": 3.6,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 5.1
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 6.0
+            }
+          }
+        },
+        {
+          "time_s": 1.4,
+          "event": "deadline_updated",
+          "deadline_s": 3.3,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.800000000000001
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.7
+            }
+          }
+        },
+        {
+          "time_s": 1.5,
+          "event": "deadline_updated",
+          "deadline_s": 3.2,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.7
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.6
+            }
+          }
+        },
+        {
+          "time_s": 1.6,
+          "event": "deadline_updated",
+          "deadline_s": 3.0,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.5
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.4
+            }
+          }
+        },
+        {
+          "time_s": 1.7,
+          "event": "deadline_updated",
+          "deadline_s": 2.9,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.4
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.3
+            }
+          }
+        },
+        {
+          "time_s": 1.8,
+          "event": "deadline_updated",
+          "deadline_s": 2.7,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.300000000000001
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.2
+            }
+          }
+        },
+        {
+          "time_s": 1.9,
+          "event": "deadline_updated",
+          "deadline_s": 2.6,
+          "trigger": {
+            "in_lane_stop": {
+              "object": "Bk",
+              "time_s": 4.2
+            },
+            "shoulder_stop": {
+              "object": "Bk",
+              "time_s": 5.1
+            }
+          }
+        },
+        {
+          "time_s": 2.6,
+          "event": "fallback_started",
+          "action": "shoulder_stop",
+          "candidates_rejected": {},
+          "deadline_s": 2.6
+        },
+        {
+          "time_s": 6.1,
+          "event": "shoulder_second_segment"
+        },
+        {
+          "time_s": 18.95,
+          "event": "observed_stop",
+          "y_m": -6.901431560516357,
+          "parked_region": "shoulder",
+          "first_below_threshold_s": 15.45
+        }
+      ]
+    }
+  ]
+}
