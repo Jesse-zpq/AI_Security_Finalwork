@@ -33,6 +33,8 @@ python -B .\work\verify_formal_batch.py .\outputs\CARLA_formal_results
 
 ## 原始日志复算
 
+P4 与右侧间隙压力条件 T2 的三策略配对结果、独立二维复跑和接管截止复核，已整合到 [Member4_右侧间隙压力测试](../Member4_右侧间隙压力测试/README.md)。其正式结果复用原 CARLA 记录，新增模型结果单独保存。
+
 组员可以用课程目录内已有的 CARLA 交接日志。`CARLA_LOG_ROOT` 指向 `CARLA_formal_results` 和 `CARLA_批跑前验证` 的共同上级。
 
 ```powershell

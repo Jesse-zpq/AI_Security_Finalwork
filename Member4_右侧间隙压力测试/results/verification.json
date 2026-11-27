@@ -1,0 +1,75 @@
+{
+  "formal_pairs_replayed": 6,
+  "timely_reference_replayed": 1,
+  "fresh_model_runs_checked": 6,
+  "deadline_decisions_checked": 96,
+  "forecast_samples": 204,
+  "single_variable_pair_checks": 3,
+  "note": "CARLA records are existing evidence; model_runs are new 2D simulations. Forecasts are not executed trajectories.",
+  "sources": [
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\P4-A.json",
+      "sha256": "a14e211aa7132f3300d6a4809890bf08ebc4ad287227033d170ce462ad60eb42"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\P4-B.json",
+      "sha256": "6a3d8cca3d58d39b29cbb2c34634a8925f5b804eefa084e9db0525f4753bf214"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\P4-C.json",
+      "sha256": "e525559fdae4cfe1da7f2a12ee7d17dd7b29211c5645ff3064374dab52b4c674"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\T2-A.json",
+      "sha256": "d5fe3c839ab2a2ccb054ec39bcbcd2a60ad843f207debcc552dbdcdeb3f8305e"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\T2-B.json",
+      "sha256": "762839958da9eb91783dbceb2ff1588ea6ecf5fce9e126dd57cf60bc6f0f62c1"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\T2-C.json",
+      "sha256": "8aff63bf8d2d874a75122d1dd6693421d75388099814500529ae77988f1e9cd7"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\P4-A.json",
+      "sha256": "05d5c39bbb4689f006494e63e9a808a0ac9f6221302a923d322e6b72e440a110"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\P4-B.json",
+      "sha256": "f1738cf4f397e08f9ab709fc33d2f20254df9ae3e25d3e43a9306870b7ba93f9"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\P4-C.json",
+      "sha256": "14b11c6c4a65be2c0b7d84b54149391652638cb45598b935a75b81ebb6a07108"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\T2-A.json",
+      "sha256": "784832b2b3330f6f9daf3de36fd6fbffb4e2969a23f8c18b652a5ceed8cd21a5"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\T2-B.json",
+      "sha256": "a3f52564b80411d4f349e8c118adb36009d4322784dcef117efb97e41453616c"
+    },
+    {
+      "path": "Member4_右侧间隙压力测试\\results\\model_runs\\T2-C.json",
+      "sha256": "b77136d143b883da175e9751037d0d430b6fb8fd41111914ef357ad7e770a007"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\core\\carla_metrics.py",
+      "sha256": "d60834e49fd5418c304728148fbe2d5267332e92ac2c383652f574d5db3cd724"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\core\\carla_pilot.py",
+      "sha256": "e815644b4c6c1ecb4af15a5d30254811ca9989752cf0ee2008d4e5bda2a6f183"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\core\\carla_preflight.py",
+      "sha256": "362fcf4c6932198726c1df6af2858cf10b2af50b41f0cd7311bc1d2bd0601598"
+    },
+    {
+      "path": "CARLA_Member3-4-5_Handoff\\CARLA_repro_handoff\\CARLA_formal_results\\P3-C.json",
+      "sha256": "b3fd34d2348e2915555a2f5d7f794e32d899cc090b620b7f8ac7d3ec9087aa58"
+    }
+  ]
+}

@@ -24,6 +24,8 @@ python member3_action_filter.py --cases T3-C --at 2.6
 
 ## 成员 4 · 接管窗口与策略切换
 
+右侧间隙压力测试的完整配对复核、新二维运行、截止审计与汇报素材见 [Member4 工作目录](../../Member4_右侧间隙压力测试/README.md)。T2 仅将右后车初始位置从 −50 m 改为 −10 m，与 P4 跟驰、无人接管主组配对。已有 CARLA 的 T2-C 初始截止为 1.90 s，但因窗口不足，实际在 0 s 即启动中道停车。
+
 ```powershell
 python member4_takeover.py
 python member4_takeover.py --cases P1-C P2-C
