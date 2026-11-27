@@ -1,0 +1,118 @@
+{
+  "N1-A": [
+    {
+      "time_s": 0.0,
+      "observed": [
+        "F",
+        "L",
+        "R",
+        "Bk"
+      ],
+      "left_candidate": {
+        "score_m": -0.350288,
+        "rejection": {
+          "object": "L",
+          "time_s": 1.7000000000000002
+        }
+      }
+    }
+  ],
+  "P2-A": [
+    {
+      "time_s": 0.0,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "left_candidate": {
+        "score_m": 25.824751,
+        "rejection": null
+      }
+    }
+  ],
+  "T1-A": [
+    {
+      "time_s": 0.0,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "left_candidate": {
+        "score_m": 25.824751,
+        "rejection": null
+      }
+    }
+  ],
+  "P2-C": [
+    {
+      "time_s": 0.0,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "left_candidate": {
+        "rejection": "left_observation_unknown"
+      },
+      "available_stop_candidates": {
+        "in_lane_stop": 1.156,
+        "shoulder_stop": 1.011987
+      },
+      "blocked_stop_candidates": {}
+    },
+    {
+      "time_s": 4.7,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "available_stop_candidates": {
+        "in_lane_stop": 1.311544
+      },
+      "blocked_stop_candidates": {
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 10.100000000000001
+        }
+      }
+    }
+  ],
+  "T1-C": [
+    {
+      "time_s": 0.0,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "left_candidate": {
+        "rejection": "left_observation_unknown"
+      },
+      "available_stop_candidates": {
+        "in_lane_stop": 1.156,
+        "shoulder_stop": 1.011987
+      },
+      "blocked_stop_candidates": {}
+    },
+    {
+      "time_s": 4.7,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "available_stop_candidates": {
+        "in_lane_stop": 1.311583
+      },
+      "blocked_stop_candidates": {
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 10.100000000000001
+        }
+      }
+    }
+  ]
+}
