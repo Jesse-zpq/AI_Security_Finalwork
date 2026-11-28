@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "T3-B",
+    "log_sha256": "782455da83e6b3aff8714f85141a1fa3b44b3756205c108003b2ba8bb8217be4",
+    "outcome": "collision",
+    "collision": [
+      {
+        "other": "Bk",
+        "time_s": 2.35,
+        "frame": 6428,
+        "source": "carla_sensor"
+      }
+    ],
+    "terminal_time_s": 2.35,
+    "first2s_front_gap_m": 42.394,
+    "first2s_rear_gap_m": 3.035,
+    "independent_rear_gap_m": 3.034735,
+    "independent_front_gap_m": 42.394138,
+    "post_stop_observation_s": null,
+    "replay_events_identical": true,
+    "replay_score_identical": true,
+    "recomputed": true,
+    "timeline": [
+      {
+        "time_s": 0.0,
+        "event": "fallback_started",
+        "action": "in_lane_stop"
+      }
+    ]
+  }
+]

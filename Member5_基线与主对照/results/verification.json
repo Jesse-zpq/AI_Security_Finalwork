@@ -1,0 +1,108 @@
+{
+  "suite": "member5_main_and_references",
+  "backend": "carla",
+  "runs": {
+    "N1-A": {
+      "sha256": "9745a596de1f4c1b02b5f6438a67432ed7fdd7aec6660bd5e65526ce0ee86e6e",
+      "outcome": "observation_limit",
+      "end_s": 25.0
+    },
+    "N2-A": {
+      "sha256": "7c4d0089269a652f3e1aa57107e698ebe2913c800f2c721e08f274051c57cf68",
+      "outcome": "observation_limit",
+      "end_s": 25.0
+    },
+    "P1-A": {
+      "sha256": "dca0bd45f951be685c7e757dece1722851eb482b1ae05f392f3405afb3a2e150",
+      "outcome": "collision",
+      "end_s": 2.0
+    },
+    "P1-B": {
+      "sha256": "aa4e80f93aac3794322f1a6b7791e66d3fcc2d08889218e1a6f639772d7860ad",
+      "outcome": "stopped_middle",
+      "end_s": 9.8
+    },
+    "P1-C": {
+      "sha256": "18ca4dad86e06b068d1321c3e3e3e9a7da9c48a1a4dc354a98a6a3004af5db47",
+      "outcome": "scripted_handover",
+      "end_s": 2.5
+    },
+    "P2-A": {
+      "sha256": "a9de3fc3745c8b7f24db1ed74e9e49410d81b06125446a339084f39ac7273b85",
+      "outcome": "collision",
+      "end_s": 2.0
+    },
+    "P2-B": {
+      "sha256": "977a5e64b2ecbb322f6bd8d60c7f02de6b50db63eacc8ff759276a8fc7ada28d",
+      "outcome": "stopped_middle",
+      "end_s": 9.8
+    },
+    "P2-C": {
+      "sha256": "0129893dc756aa65d63d7ccbc0d706e2912e6ce2edf2c50a5e6d6ecbb4369f75",
+      "outcome": "stopped_middle",
+      "end_s": 13.7
+    },
+    "P3-A": {
+      "sha256": "3ba3efc5806ac46222faeaa4b340bb9ba146c61c7f6ddec5c0448016d8f13ed3",
+      "outcome": "observation_limit",
+      "end_s": 25.0
+    },
+    "P3-B": {
+      "sha256": "c6ccba610e024ae03fd461bfd07b0a53fe78d3d20000c39937fc547fd49360e7",
+      "outcome": "stopped_middle",
+      "end_s": 9.8
+    },
+    "P3-C": {
+      "sha256": "e13efacc1b488eabf5ac500088a7c885fb9d24620dadf5d79effa36acf924145",
+      "outcome": "scripted_handover",
+      "end_s": 2.5
+    },
+    "P4-A": {
+      "sha256": "8e6a0cf93ec287f3d0895e3b44d388db8dbb9aa911010b40f6be123d774a0cd6",
+      "outcome": "observation_limit",
+      "end_s": 25.0
+    },
+    "P4-B": {
+      "sha256": "eb489ce09879bbee048032d0ac146230dcd8b682fe3c20f2071b3774480d550c",
+      "outcome": "stopped_middle",
+      "end_s": 9.8
+    },
+    "P4-C": {
+      "sha256": "e2a1f475c1a2136f98038346d2546d9be0644da533d7bdbe135024fe89d6b7e5",
+      "outcome": "stopped_middle",
+      "end_s": 13.7
+    }
+  },
+  "source_code": {
+    "carla_metrics.py": "8917f50af79de3b4b68aca85716d4a3727244168d90b6a4d49fb8f654d6a101e",
+    "carla_pilot.py": "cea7a37189577f3d9f3c19556677175dfc18c59c736fa85d9897263ed843d00a",
+    "carla_preflight.py": "5a69ec0817b4683cf4e1a8402867f13c5949edc107402956bbf27813331c0d62"
+  },
+  "checks": {
+    "reference_runs": 2,
+    "main_runs": 12,
+    "score_recomputed_from_frames": true,
+    "summary_rows_matched": true,
+    "events_matched": true
+  },
+  "expectations": {
+    "A_left_collisions": [
+      "P1-A",
+      "P2-A"
+    ],
+    "B_immediate_stops": [
+      "P1-B",
+      "P2-B",
+      "P3-B",
+      "P4-B"
+    ],
+    "C_handovers": [
+      "P1-C",
+      "P3-C"
+    ],
+    "C_wait_then_stop": [
+      "P2-C",
+      "P4-C"
+    ]
+  }
+}

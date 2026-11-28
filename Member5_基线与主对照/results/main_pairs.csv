@@ -1,0 +1,15 @@
+﻿run_id,backend,intent,takeover_condition,strategy,matched_run,action_at_0,left_decision,left_reject_reason,deadline_0_s,takeover_request_s,driver_ready_s,handover_s,fallback_action,fallback_s,first_below_stop_s,stop_s,stop_x_m,collision_actor,collision_s,outcome,end_s,first2s_front_gap_m,first2s_rear_gap_m,first2s_left_gap_m,first2s_right_gap_m,first2s_longitudinal_ttc_s,first2s_ego_acceleration_mps2,full_front_gap_m,full_rear_gap_m,full_left_gap_m,full_right_gap_m,full_longitudinal_ttc_s,full_ego_acceleration_mps2
+N1-A,carla,左变道,正常观测,A,P2-A,follow,rejected,L@1.70s,,,,,,,,,,,,observation_limit,25.0,35.868,50.931,1.512,,8.092,-1.549,23.118,50.022,1.512,1.511,8.092,-1.549
+N2-A,carla,跟驰,正常观测,A,P4-A,follow,,,,,,,,,,,,,,observation_limit,25.0,35.886,50.919,1.512,,8.107,-1.542,23.116,50.013,1.511,1.51,8.107,-1.542
+P1-A,carla,左变道,及时接管,A,P2-A,left_change,accepted,,,,2.0,,,,,,,L,2.0,collision,2.0,35.357,-0.512,-0.997,,0.025,-0.151,35.357,-0.512,-0.997,,0.025,-0.151
+P1-B,carla,左变道,及时接管,B,P2-B,in_lane_stop,,,,,2.0,,in_lane_stop,0.0,6.3,9.8,77.635,,,stopped_middle,9.8,42.399,43.035,1.512,,4.351,-4.413,42.399,6.73,1.512,1.511,1.818,-4.413
+P1-C,carla,左变道,及时接管,C,P2-C,wait,rejected,left_observation_unknown,4.7,0.0,2.0,2.5,,,,,,,,scripted_handover,2.5,35.85,50.924,1.512,,8.082,-1.586,34.038,50.075,1.512,,8.082,-1.586
+P2-A,carla,左变道,无人接管,A,,left_change,accepted,,,,,,,,,,,L,2.0,collision,2.0,35.357,-0.511,-0.998,,0.025,-0.148,35.357,-0.511,-0.998,,0.025,-0.148
+P2-B,carla,左变道,无人接管,B,,in_lane_stop,,,,,,,in_lane_stop,0.0,6.3,9.8,77.633,,,stopped_middle,9.8,42.393,43.034,1.512,,4.35,-4.413,42.393,6.751,1.512,1.512,1.818,-4.413
+P2-C,carla,左变道,无人接管,C,,wait,rejected,left_observation_unknown,4.7,0.0,,,in_lane_stop,4.7,10.2,13.7,169.156,,,stopped_middle,13.7,35.869,50.905,1.512,,8.085,-1.56,28.38,50.0,1.512,1.512,8.085,-4.593
+P3-A,carla,跟驰,及时接管,A,P4-A,follow,,,,,2.0,,,,,,,,,observation_limit,25.0,35.886,50.919,1.512,,8.107,-1.542,23.117,50.011,1.512,1.511,8.107,-1.542
+P3-B,carla,跟驰,及时接管,B,P4-B,in_lane_stop,,,,,2.0,,in_lane_stop,0.0,6.3,9.8,77.635,,,stopped_middle,9.8,42.399,43.035,1.512,,4.351,-4.413,42.399,6.754,1.512,1.511,1.818,-4.413
+P3-C,carla,跟驰,及时接管,C,P4-C,wait,,,4.7,0.0,2.0,2.5,,,,,,,,scripted_handover,2.5,35.893,50.911,1.512,,8.066,-1.556,34.076,50.068,1.512,,8.066,-1.556
+P4-A,carla,跟驰,无人接管,A,,follow,,,,,,,,,,,,,,observation_limit,25.0,35.886,50.919,1.512,,8.107,-1.542,23.118,50.021,1.511,1.511,8.107,-1.542
+P4-B,carla,跟驰,无人接管,B,,in_lane_stop,,,,,,,in_lane_stop,0.0,6.3,9.8,77.635,,,stopped_middle,9.8,42.394,43.035,1.512,,4.351,-4.413,42.394,6.755,1.512,1.511,1.819,-4.413
+P4-C,carla,跟驰,无人接管,C,,wait,,,4.7,0.0,,,in_lane_stop,4.7,10.2,13.7,169.192,,,stopped_middle,13.7,35.891,50.908,1.512,,8.101,-1.556,28.391,50.005,1.512,1.512,8.101,-4.593
