@@ -1,0 +1,447 @@
+{
+  "P2-A": [
+    {
+      "time_s": 0.0,
+      "event": "left_accepted",
+      "trigger": null,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ]
+    }
+  ],
+  "P2-B": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ],
+  "P2-C": [
+    {
+      "time_s": 0.0,
+      "event": "left_rejected",
+      "trigger": "left_observation_unknown",
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ]
+    },
+    {
+      "time_s": 0.0,
+      "event": "deadline_updated",
+      "deadline_s": 4.7,
+      "trigger": "wait_cap"
+    },
+    {
+      "time_s": 0.0,
+      "event": "takeover_requested",
+      "deadline_s": 4.7
+    },
+    {
+      "time_s": 1.9,
+      "event": "deadline_updated",
+      "deadline_s": 4.5,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 8.600000000000001
+        },
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 10.4
+        }
+      }
+    },
+    {
+      "time_s": 4.5,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "candidates_rejected": {},
+      "deadline_s": 4.5
+    },
+    {
+      "time_s": 13.5,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 10.0
+    }
+  ],
+  "P4-A": [],
+  "P4-B": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ],
+  "P4-C": [
+    {
+      "time_s": 0.0,
+      "event": "deadline_updated",
+      "deadline_s": 4.7,
+      "trigger": "wait_cap"
+    },
+    {
+      "time_s": 0.0,
+      "event": "takeover_requested",
+      "deadline_s": 4.7
+    },
+    {
+      "time_s": 1.9,
+      "event": "deadline_updated",
+      "deadline_s": 4.5,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 8.600000000000001
+        },
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 10.4
+        }
+      }
+    },
+    {
+      "time_s": 4.5,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "candidates_rejected": {},
+      "deadline_s": 4.5
+    },
+    {
+      "time_s": 13.5,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 10.0
+    }
+  ],
+  "T1-A": [
+    {
+      "time_s": 0.0,
+      "event": "left_accepted",
+      "trigger": null,
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ]
+    }
+  ],
+  "T1-B": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ],
+  "T1-C": [
+    {
+      "time_s": 0.0,
+      "event": "left_rejected",
+      "trigger": "left_observation_unknown",
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ]
+    },
+    {
+      "time_s": 0.0,
+      "event": "deadline_updated",
+      "deadline_s": 4.7,
+      "trigger": "wait_cap"
+    },
+    {
+      "time_s": 0.0,
+      "event": "takeover_requested",
+      "deadline_s": 4.7
+    },
+    {
+      "time_s": 1.9,
+      "event": "deadline_updated",
+      "deadline_s": 4.5,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 8.600000000000001
+        },
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 10.4
+        }
+      }
+    },
+    {
+      "time_s": 4.5,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "candidates_rejected": {},
+      "deadline_s": 4.5
+    },
+    {
+      "time_s": 13.5,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 10.0
+    }
+  ],
+  "T2-A": [],
+  "T2-B": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ],
+  "T2-C": [
+    {
+      "time_s": 0.0,
+      "event": "deadline_updated",
+      "deadline_s": 1.8,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 9.4
+        },
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 3.8000000000000003
+        }
+      }
+    },
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "candidates_rejected": {
+        "shoulder_stop": {
+          "object": "R",
+          "time_s": 1.6
+        }
+      },
+      "deadline_s": 1.8
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ],
+  "T3-A": [],
+  "T3-B": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    }
+  ],
+  "T3-C": [
+    {
+      "time_s": 0.0,
+      "event": "deadline_updated",
+      "deadline_s": 4.2,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 5.6000000000000005
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 6.500000000000001
+        }
+      }
+    },
+    {
+      "time_s": 0.0,
+      "event": "takeover_requested",
+      "deadline_s": 4.2
+    },
+    {
+      "time_s": 1.1,
+      "event": "deadline_updated",
+      "deadline_s": 3.5,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 5.0
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 5.800000000000001
+        }
+      }
+    },
+    {
+      "time_s": 1.2,
+      "event": "deadline_updated",
+      "deadline_s": 3.2,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.700000000000001
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 5.500000000000001
+        }
+      }
+    },
+    {
+      "time_s": 1.3,
+      "event": "deadline_updated",
+      "deadline_s": 3.0,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.5
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 5.2
+        }
+      }
+    },
+    {
+      "time_s": 1.4,
+      "event": "deadline_updated",
+      "deadline_s": 2.8,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.300000000000001
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 5.1000000000000005
+        }
+      }
+    },
+    {
+      "time_s": 1.5,
+      "event": "deadline_updated",
+      "deadline_s": 2.7,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.2
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 5.0
+        }
+      }
+    },
+    {
+      "time_s": 1.6,
+      "event": "deadline_updated",
+      "deadline_s": 2.6,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.2
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 4.9
+        }
+      }
+    },
+    {
+      "time_s": 1.8,
+      "event": "deadline_updated",
+      "deadline_s": 2.5,
+      "trigger": {
+        "in_lane_stop": {
+          "object": "Bk",
+          "time_s": 4.1000000000000005
+        },
+        "shoulder_stop": {
+          "object": "Bk",
+          "time_s": 4.800000000000001
+        }
+      }
+    },
+    {
+      "time_s": 2.5,
+      "event": "fallback_started",
+      "action": "shoulder_stop",
+      "candidates_rejected": {},
+      "deadline_s": 2.5
+    },
+    {
+      "time_s": 6.0,
+      "event": "shoulder_second_segment"
+    },
+    {
+      "time_s": 18.95,
+      "event": "observed_stop",
+      "y_m": -6.9,
+      "parked_region": "shoulder",
+      "first_below_threshold_s": 15.45
+    }
+  ],
+  "X1-C": [
+    {
+      "time_s": 0.0,
+      "event": "no_verified_fallback",
+      "candidates": {
+        "in_lane_stop": {
+          "object": "left_unknown",
+          "time_s": 0.8
+        },
+        "shoulder_stop": {
+          "object": "F",
+          "time_s": 0.6000000000000001
+        }
+      }
+    },
+    {
+      "time_s": 9.75,
+      "event": "observed_stop",
+      "y_m": 0.0,
+      "parked_region": "middle",
+      "first_below_threshold_s": 6.2
+    }
+  ]
+}

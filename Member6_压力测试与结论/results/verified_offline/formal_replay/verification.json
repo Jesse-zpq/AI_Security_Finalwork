@@ -1,0 +1,103 @@
+{
+  "mode": "replay",
+  "archived_exact_replays": [
+    "P2-A",
+    "P2-B",
+    "P2-C",
+    "P4-A",
+    "P4-B",
+    "P4-C",
+    "T1-A",
+    "T1-B",
+    "T1-C",
+    "T2-A",
+    "T2-B",
+    "T2-C",
+    "T3-A",
+    "T3-B",
+    "T3-C",
+    "X1-C"
+  ],
+  "local_ids": [],
+  "independent_review_new_or_imported": false,
+  "sources": {
+    "P2-A": "archive_replay",
+    "P2-B": "archive_replay",
+    "P2-C": "archive_replay",
+    "P4-A": "archive_replay",
+    "P4-B": "archive_replay",
+    "P4-C": "archive_replay",
+    "T1-A": "archive_replay",
+    "T1-B": "archive_replay",
+    "T1-C": "archive_replay",
+    "T2-A": "archive_replay",
+    "T2-B": "archive_replay",
+    "T2-C": "archive_replay",
+    "T3-A": "archive_replay",
+    "T3-B": "archive_replay",
+    "T3-C": "archive_replay",
+    "X1-C": "archive_replay"
+  },
+  "parameters": {
+    "physics_step_s": 0.05,
+    "decision_step_s": 0.1,
+    "fault_at_s": 0.0,
+    "horizon_s": 25.0,
+    "post_stop_observation_s": 3.0,
+    "max_wait_s": 5.0,
+    "mrm_launch_margin_s": 0.3,
+    "handover_buffer_s": 0.5,
+    "lateral_segment_s": 3.5,
+    "braking_target_mps2": -4.0,
+    "mild_braking_target_mps2": -2.0,
+    "nominal_follow_desired_speed_mps": 25.0,
+    "nominal_follow_standoff_m": 5.0,
+    "nominal_follow_headway_s": 1.4,
+    "nominal_follow_speed_gain_per_s": 0.6,
+    "nominal_follow_gap_gain_per_s2": 0.3,
+    "predicted_rear_response_delay_s": [
+      1.5,
+      2.0
+    ],
+    "predicted_rear_braking_magnitude_mps2": [
+      5.0,
+      5.5
+    ],
+    "longitudinal_clearance_margin_m": 2.0,
+    "lateral_clearance_margin_m": 0.2,
+    "fallback_score_tie_margin_m": 0.2,
+    "left_prior_x_m": [
+      -30.0,
+      -15.0
+    ],
+    "left_prior_v_mps": [
+      32.0,
+      34.0
+    ],
+    "left_prior_lane_center_offset_m": 0.3
+  },
+  "sha256": {
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P2-A.json": "a9de3fc3745c8b7f24db1ed74e9e49410d81b06125446a339084f39ac7273b85",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P2-B.json": "977a5e64b2ecbb322f6bd8d60c7f02de6b50db63eacc8ff759276a8fc7ada28d",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P2-C.json": "0129893dc756aa65d63d7ccbc0d706e2912e6ce2edf2c50a5e6d6ecbb4369f75",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P4-A.json": "8e6a0cf93ec287f3d0895e3b44d388db8dbb9aa911010b40f6be123d774a0cd6",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P4-B.json": "eb489ce09879bbee048032d0ac146230dcd8b682fe3c20f2071b3774480d550c",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/P4-C.json": "e2a1f475c1a2136f98038346d2546d9be0644da533d7bdbe135024fe89d6b7e5",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T1-A.json": "b5772535a0ad1037ae2f7f34c0c40974fa77326c632ec96378fd1196987abbe0",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T1-B.json": "f43fd6dd1ff16944e6c71400dbcf319d91fdac3a4e2b62422710eb0cc75455ab",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T1-C.json": "e6ac9c3a3af70e34f1743d824ee687b669b0b3d3b28fdd8717edd6aa14ade5ba",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T2-A.json": "436de33b1fbea64367bb64faa8bf1bbcadb016997940e11445ba60cbcf21afb9",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T2-B.json": "898f8eab33b5af9c90d793af60256147ef0cbe9bebcfcf93b77647a34b0f5772",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T2-C.json": "99f003bc21462f854396f5f07e2744db05c7f0ecfa560ace82000af7367f665f",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T3-A.json": "2921d097ba144cd45afb1c369abdf697d9b10672ab6e4c5452336cde583292ef",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T3-B.json": "782455da83e6b3aff8714f85141a1fa3b44b3756205c108003b2ba8bb8217be4",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_formal_results/T3-C.json": "b5e3294ff4b1a62e384f27eb2275d7aaa97e6d735eaaf1174ab236cc02530b70",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/CARLA_批跑前验证/X1-C.json": "aa11aad010f661e1385d5640bd49a53517d4a0b5bdad980a31f565bf3e54c0a3",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/core/carla_preflight.py": "5a69ec0817b4683cf4e1a8402867f13c5949edc107402956bbf27813331c0d62",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/core/carla_metrics.py": "8917f50af79de3b4b68aca85716d4a3727244168d90b6a4d49fb8f654d6a101e",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/core/carla_pilot.py": "cea7a37189577f3d9f3c19556677175dfc18c59c736fa85d9897263ed843d00a",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/replay.py": "d17657867bc71b9c4167b7438c1ae2c70ad5bb3883f82f0e41f898bd237c4d10",
+    "/tmp/m6clean/AI_Security_Finalwork-main/CARLA_Member3-4-5_Handoff/CARLA_repro_handoff/member5_baselines.py": "7b788a83a7679813654bff2fa3a9d3ab254a34dd8fbf20ccd5565b57949944f8",
+    "/tmp/m6clean/AI_Security_Finalwork-main/Member6_压力测试与结论/run_member6.py": "ca658d7c64675741538213d4ce45a2e228cca2a37f08afd78a4a271e3fd0b512"
+  }
+}

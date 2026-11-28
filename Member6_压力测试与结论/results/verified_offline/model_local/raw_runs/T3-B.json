@@ -1,0 +1,2730 @@
+{
+  "run_id": "T3-B",
+  "case": {
+    "run_id": "T3-B",
+    "role": "fault",
+    "strategy": "B",
+    "pair_with": "P4-B",
+    "intent": "follow",
+    "readiness_event_s": null,
+    "left_observation_lost": true,
+    "expand_left_prior_to_middle": false,
+    "actor_overrides": {
+      "Bk": {
+        "x_m": -20.0
+      }
+    }
+  },
+  "outcome": "collision",
+  "events": [
+    {
+      "time_s": 0.0,
+      "event": "fallback_started",
+      "action": "in_lane_stop",
+      "trigger": "immediate_braking_baseline"
+    }
+  ],
+  "collisions": [
+    {
+      "other": "Bk",
+      "time_s": 2.35,
+      "source": "model_boxes"
+    }
+  ],
+  "minimum_projected_clearance": {
+    "F": {
+      "time_s": 1.25,
+      "score_m": 39.875,
+      "gap_x_m": 41.875,
+      "gap_y_m": -1.8
+    },
+    "L": {
+      "time_s": 1.15,
+      "score_m": 1.6,
+      "gap_x_m": 3.155000000000001,
+      "gap_y_m": 1.8
+    },
+    "R": {
+      "time_s": 2.35,
+      "score_m": 27.25500000000001,
+      "gap_x_m": 29.25500000000001,
+      "gap_y_m": 1.8
+    },
+    "Bk": {
+      "time_s": 2.35,
+      "score_m": -2.0,
+      "gap_x_m": -0.43874999999999176,
+      "gap_y_m": -1.8
+    }
+  },
+  "frames": [
+    {
+      "time_s": 0.0,
+      "world_frame": 0,
+      "states": {
+        "E": {
+          "x": 0.0,
+          "y": 0.0,
+          "v": 25.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 50.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -20.0,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -50.0,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -20.0,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.05,
+      "world_frame": 1,
+      "states": {
+        "E": {
+          "x": 1.245,
+          "y": 0.0,
+          "v": 24.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 51.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -18.35,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -48.65,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -18.65,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.1,
+      "world_frame": 2,
+      "states": {
+        "E": {
+          "x": 2.48,
+          "y": 0.0,
+          "v": 24.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 52.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -16.7,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -47.3,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -17.3,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.15,
+      "world_frame": 3,
+      "states": {
+        "E": {
+          "x": 3.7050000000000005,
+          "y": 0.0,
+          "v": 24.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 53.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -15.049999999999999,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -45.95,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -15.95,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.2,
+      "world_frame": 4,
+      "states": {
+        "E": {
+          "x": 4.92,
+          "y": 0.0,
+          "v": 24.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 54.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -13.399999999999999,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -44.6,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -14.6,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.25,
+      "world_frame": 5,
+      "states": {
+        "E": {
+          "x": 6.125,
+          "y": 0.0,
+          "v": 24.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 55.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -11.75,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -43.25,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -13.25,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.3,
+      "world_frame": 6,
+      "states": {
+        "E": {
+          "x": 7.32,
+          "y": 0.0,
+          "v": 23.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 56.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -10.1,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -41.9,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -11.9,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.35,
+      "world_frame": 7,
+      "states": {
+        "E": {
+          "x": 8.505,
+          "y": 0.0,
+          "v": 23.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 57.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -8.450000000000001,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -40.55,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -10.55,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.4,
+      "world_frame": 8,
+      "states": {
+        "E": {
+          "x": 9.68,
+          "y": 0.0,
+          "v": 23.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 58.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -6.800000000000001,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -39.2,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -9.200000000000001,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.45,
+      "world_frame": 9,
+      "states": {
+        "E": {
+          "x": 10.845,
+          "y": 0.0,
+          "v": 23.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 59.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -5.15,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -37.85,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -7.85,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.5,
+      "world_frame": 10,
+      "states": {
+        "E": {
+          "x": 12.0,
+          "y": 0.0,
+          "v": 23.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 60.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -3.5,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -36.5,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -6.5,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.55,
+      "world_frame": 11,
+      "states": {
+        "E": {
+          "x": 13.145000000000001,
+          "y": 0.0,
+          "v": 22.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 61.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -1.8499999999999979,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -35.15,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -5.149999999999999,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.6,
+      "world_frame": 12,
+      "states": {
+        "E": {
+          "x": 14.280000000000001,
+          "y": 0.0,
+          "v": 22.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 62.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": -0.19999999999999574,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -33.8,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -3.799999999999997,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.65,
+      "world_frame": 13,
+      "states": {
+        "E": {
+          "x": 15.405,
+          "y": 0.0,
+          "v": 22.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 63.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 1.4499999999999993,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -32.45,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -2.4499999999999993,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.7,
+      "world_frame": 14,
+      "states": {
+        "E": {
+          "x": 16.52,
+          "y": 0.0,
+          "v": 22.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 64.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 3.1000000000000014,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -31.099999999999998,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": -1.0999999999999979,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.75,
+      "world_frame": 15,
+      "states": {
+        "E": {
+          "x": 17.625,
+          "y": 0.0,
+          "v": 22.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 65.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 4.75,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -29.75,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 0.25,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.8,
+      "world_frame": 16,
+      "states": {
+        "E": {
+          "x": 18.72,
+          "y": 0.0,
+          "v": 21.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 66.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 6.400000000000002,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -28.4,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 1.6000000000000014,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.85,
+      "world_frame": 17,
+      "states": {
+        "E": {
+          "x": 19.805000000000003,
+          "y": 0.0,
+          "v": 21.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 67.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 8.050000000000004,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -27.049999999999997,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 2.950000000000003,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.9,
+      "world_frame": 18,
+      "states": {
+        "E": {
+          "x": 20.88,
+          "y": 0.0,
+          "v": 21.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 68.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 9.7,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -25.7,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 4.300000000000001,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 0.95,
+      "world_frame": 19,
+      "states": {
+        "E": {
+          "x": 21.945,
+          "y": 0.0,
+          "v": 21.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 69.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 11.350000000000001,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -24.349999999999998,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 5.650000000000002,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.0,
+      "world_frame": 20,
+      "states": {
+        "E": {
+          "x": 23.0,
+          "y": 0.0,
+          "v": 21.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 70.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 13.0,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -23.0,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 7.0,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.05,
+      "world_frame": 21,
+      "states": {
+        "E": {
+          "x": 24.045,
+          "y": 0.0,
+          "v": 20.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 71.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 14.649999999999999,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -21.65,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 8.350000000000001,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.1,
+      "world_frame": 22,
+      "states": {
+        "E": {
+          "x": 25.080000000000002,
+          "y": 0.0,
+          "v": 20.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 72.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 16.300000000000004,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -20.299999999999997,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 9.700000000000003,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.15,
+      "world_frame": 23,
+      "states": {
+        "E": {
+          "x": 26.105000000000004,
+          "y": 0.0,
+          "v": 20.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 73.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 17.950000000000003,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -18.949999999999996,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 11.050000000000004,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.2,
+      "world_frame": 24,
+      "states": {
+        "E": {
+          "x": 27.12,
+          "y": 0.0,
+          "v": 20.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 74.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 19.6,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -17.6,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 12.399999999999999,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.25,
+      "world_frame": 25,
+      "states": {
+        "E": {
+          "x": 28.125,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 75.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 21.25,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -16.25,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 13.75,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.3,
+      "world_frame": 26,
+      "states": {
+        "E": {
+          "x": 29.12,
+          "y": 0.0,
+          "v": 19.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 76.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 22.9,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -14.899999999999999,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 15.100000000000001,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.35,
+      "world_frame": 27,
+      "states": {
+        "E": {
+          "x": 30.105,
+          "y": 0.0,
+          "v": 19.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 77.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 24.550000000000004,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -13.549999999999997,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 16.450000000000003,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.4,
+      "world_frame": 28,
+      "states": {
+        "E": {
+          "x": 31.08,
+          "y": 0.0,
+          "v": 19.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 78.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 26.200000000000003,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -12.199999999999996,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 17.800000000000004,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.45,
+      "world_frame": 29,
+      "states": {
+        "E": {
+          "x": 32.045,
+          "y": 0.0,
+          "v": 19.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 79.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 27.85,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -10.850000000000001,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 19.15,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.5,
+      "world_frame": 30,
+      "states": {
+        "E": {
+          "x": 33.0,
+          "y": 0.0,
+          "v": 19.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 80.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 29.5,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -9.5,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 20.5,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.55,
+      "world_frame": 31,
+      "states": {
+        "E": {
+          "x": 33.945,
+          "y": 0.0,
+          "v": 18.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 81.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 31.15,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -8.149999999999999,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 21.85,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.6,
+      "world_frame": 32,
+      "states": {
+        "E": {
+          "x": 34.879999999999995,
+          "y": 0.0,
+          "v": 18.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 82.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 32.800000000000004,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -6.799999999999997,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 23.200000000000003,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.65,
+      "world_frame": 33,
+      "states": {
+        "E": {
+          "x": 35.805,
+          "y": 0.0,
+          "v": 18.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 83.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 34.45,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -5.449999999999996,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 24.550000000000004,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.7,
+      "world_frame": 34,
+      "states": {
+        "E": {
+          "x": 36.72,
+          "y": 0.0,
+          "v": 18.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 84.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 36.1,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -4.100000000000001,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 25.9,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.75,
+      "world_frame": 35,
+      "states": {
+        "E": {
+          "x": 37.625,
+          "y": 0.0,
+          "v": 18.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 85.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 37.75,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -2.75,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 27.25,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.8,
+      "world_frame": 36,
+      "states": {
+        "E": {
+          "x": 38.519999999999996,
+          "y": 0.0,
+          "v": 17.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 86.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 39.4,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -1.3999999999999986,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 28.6,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.85,
+      "world_frame": 37,
+      "states": {
+        "E": {
+          "x": 39.405,
+          "y": 0.0,
+          "v": 17.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 87.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 41.050000000000004,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": -0.04999999999999716,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 29.950000000000003,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.9,
+      "world_frame": 38,
+      "states": {
+        "E": {
+          "x": 40.28,
+          "y": 0.0,
+          "v": 17.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 88.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 42.7,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 1.3000000000000043,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 31.300000000000004,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 1.95,
+      "world_frame": 39,
+      "states": {
+        "E": {
+          "x": 41.145,
+          "y": 0.0,
+          "v": 17.2,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 89.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 44.349999999999994,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 2.6499999999999986,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 32.65,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.0,
+      "world_frame": 40,
+      "states": {
+        "E": {
+          "x": 42.0,
+          "y": 0.0,
+          "v": 17.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 90.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 46.0,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 4.0,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 34.0,
+          "y": 0.0,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.05,
+      "world_frame": 41,
+      "states": {
+        "E": {
+          "x": 42.84499999999999,
+          "y": 0.0,
+          "v": 16.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 91.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 47.64999999999999,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 5.349999999999994,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 35.34374999999999,
+          "y": 0.0,
+          "v": 26.75,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.1,
+      "world_frame": 42,
+      "states": {
+        "E": {
+          "x": 43.67999999999999,
+          "y": 0.0,
+          "v": 16.6,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 92.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 49.29999999999998,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 6.699999999999989,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 36.67499999999999,
+          "y": 0.0,
+          "v": 26.5,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.15,
+      "world_frame": 43,
+      "states": {
+        "E": {
+          "x": 44.505,
+          "y": 0.0,
+          "v": 16.4,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 93.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 50.95,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 8.049999999999997,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 37.99375,
+          "y": 0.0,
+          "v": 26.25,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.2,
+      "world_frame": 44,
+      "states": {
+        "E": {
+          "x": 45.31999999999999,
+          "y": 0.0,
+          "v": 16.200000000000003,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 94.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 52.599999999999994,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 9.399999999999991,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 39.29999999999999,
+          "y": 0.0,
+          "v": 26.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.25,
+      "world_frame": 45,
+      "states": {
+        "E": {
+          "x": 46.125,
+          "y": 0.0,
+          "v": 16.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 95.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 54.25,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 10.75,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 40.59375,
+          "y": 0.0,
+          "v": 25.75,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.3,
+      "world_frame": 46,
+      "states": {
+        "E": {
+          "x": 46.919999999999995,
+          "y": 0.0,
+          "v": 15.8,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 96.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 55.89999999999999,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 12.099999999999994,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 41.87499999999999,
+          "y": 0.0,
+          "v": 25.5,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    },
+    {
+      "time_s": 2.35,
+      "world_frame": 47,
+      "states": {
+        "E": {
+          "x": 47.705,
+          "y": 0.0,
+          "v": 15.600000000000001,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "F": {
+          "x": 97.0,
+          "y": 0.0,
+          "v": 20.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "L": {
+          "x": 57.54999999999998,
+          "y": 3.6,
+          "v": 33.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "R": {
+          "x": 13.449999999999989,
+          "y": -3.6,
+          "v": 27.0,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        },
+        "Bk": {
+          "x": 43.14374999999999,
+          "y": 0.0,
+          "v": 25.25,
+          "length": 5.0,
+          "width": 1.8,
+          "yaw": 0.0
+        }
+      },
+      "observed": [
+        "F",
+        "R",
+        "Bk"
+      ],
+      "action": "in_lane_stop",
+      "deadline_s": null,
+      "controls_for_this_frame": null
+    }
+  ],
+  "backend": "model",
+  "carla_version": null,
+  "physics_step_s": 0.05,
+  "decision_step_s": 0.1,
+  "observation_limit_s": 25.0,
+  "brake_pedal_scale_mps2": null,
+  "score": {
+    "outcome": "collision",
+    "collision": true,
+    "first_collision": {
+      "other": "Bk",
+      "time_s": 2.35,
+      "source": "model_boxes"
+    },
+    "terminal_time_s": 2.35,
+    "shared_window_s": {
+      "front_gap_m": {
+        "value": 41.875,
+        "time_s": 1.25,
+        "actor": "F"
+      },
+      "rear_gap_m": {
+        "value": 3.0,
+        "time_s": 2.0,
+        "actor": "Bk"
+      },
+      "left_gap_m": {
+        "value": 1.8,
+        "time_s": 1.25,
+        "actor": "L"
+      },
+      "right_gap_m": null,
+      "longitudinal_ttc_s": {
+        "value": 0.3,
+        "time_s": 2.0,
+        "actor": "Bk"
+      },
+      "ego_acceleration_mps2": {
+        "value": -4.000000000000071,
+        "time_s": 1.15,
+        "actor": null
+      },
+      "observed_until_s": 2.0,
+      "first_outside_corridor_s": null
+    },
+    "until_endpoint": {
+      "front_gap_m": {
+        "value": 41.875,
+        "time_s": 1.25,
+        "actor": "F"
+      },
+      "rear_gap_m": {
+        "value": -0.43874999999999176,
+        "time_s": 2.35,
+        "actor": "Bk"
+      },
+      "left_gap_m": {
+        "value": 1.8,
+        "time_s": 1.25,
+        "actor": "L"
+      },
+      "right_gap_m": null,
+      "longitudinal_ttc_s": {
+        "value": 0.004639175257732135,
+        "time_s": 2.3,
+        "actor": "Bk"
+      },
+      "ego_acceleration_mps2": {
+        "value": -4.000000000000071,
+        "time_s": 1.15,
+        "actor": null
+      },
+      "observed_until_s": 2.35,
+      "first_outside_corridor_s": null
+    }
+  }
+}

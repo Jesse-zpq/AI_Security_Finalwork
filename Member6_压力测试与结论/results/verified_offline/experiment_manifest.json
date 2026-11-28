@@ -1,0 +1,407 @@
+{
+  "status": "draft_inputs_for_calibration",
+  "coordinates": "vehicle centers, +x forward, +y left, course x=0 at road s=100 m",
+  "road_length_m": 1200.0,
+  "lanes": {
+    "left": {
+      "xodr_lane_id": -1,
+      "y_m": 3.6,
+      "width_m": 3.6
+    },
+    "middle": {
+      "xodr_lane_id": -2,
+      "y_m": 0.0,
+      "width_m": 3.6
+    },
+    "right": {
+      "xodr_lane_id": -3,
+      "y_m": -3.6,
+      "width_m": 3.6
+    },
+    "shoulder": {
+      "xodr_lane_id": -4,
+      "y_m": -6.9,
+      "width_m": 3.0
+    }
+  },
+  "reference_actors": {
+    "E": {
+      "x_m": 0.0,
+      "lane": "middle",
+      "speed_mps": 25.0
+    },
+    "F": {
+      "x_m": 50.0,
+      "lane": "middle",
+      "speed_mps": 20.0
+    },
+    "L": {
+      "x_m": -20.0,
+      "lane": "left",
+      "speed_mps": 33.0
+    },
+    "R": {
+      "x_m": -50.0,
+      "lane": "right",
+      "speed_mps": 27.0
+    },
+    "Bk": {
+      "x_m": -60.0,
+      "lane": "middle",
+      "speed_mps": 27.0
+    }
+  },
+  "reference_actor_motion": {
+    "F_L_R": "hold initial speed and lane unless overridden",
+    "Bk": {
+      "brake_at_s": 2.0,
+      "acceleration_mps2": -5.0,
+      "speed_floor_mps": 0.0
+    }
+  },
+  "parameters": {
+    "physics_step_s": 0.05,
+    "decision_step_s": 0.1,
+    "fault_at_s": 0.0,
+    "horizon_s": 25.0,
+    "post_stop_observation_s": 3.0,
+    "max_wait_s": 5.0,
+    "mrm_launch_margin_s": 0.3,
+    "handover_buffer_s": 0.5,
+    "lateral_segment_s": 3.5,
+    "braking_target_mps2": -4.0,
+    "mild_braking_target_mps2": -2.0,
+    "nominal_follow_desired_speed_mps": 25.0,
+    "nominal_follow_standoff_m": 5.0,
+    "nominal_follow_headway_s": 1.4,
+    "nominal_follow_speed_gain_per_s": 0.6,
+    "nominal_follow_gap_gain_per_s2": 0.3,
+    "predicted_rear_response_delay_s": [
+      1.5,
+      2.0
+    ],
+    "predicted_rear_braking_magnitude_mps2": [
+      5.0,
+      5.5
+    ],
+    "longitudinal_clearance_margin_m": 2.0,
+    "lateral_clearance_margin_m": 0.2,
+    "fallback_score_tie_margin_m": 0.2,
+    "left_prior_x_m": [
+      -30.0,
+      -15.0
+    ],
+    "left_prior_v_mps": [
+      32.0,
+      34.0
+    ],
+    "left_prior_lane_center_offset_m": 0.3
+  },
+  "runs": [
+    {
+      "run_id": "N1-A",
+      "role": "reference",
+      "strategy": "A",
+      "pair_with": "P2-A",
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": false,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "N2-A",
+      "role": "reference",
+      "strategy": "A",
+      "pair_with": "P4-A",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": false,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P1-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": "P2-A",
+      "intent": "left",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P1-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": "P2-B",
+      "intent": "left",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P1-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": "P2-C",
+      "intent": "left",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P2-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": null,
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P2-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": null,
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P2-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": null,
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P3-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": "P4-A",
+      "intent": "follow",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P3-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": "P4-B",
+      "intent": "follow",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P3-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": "P4-C",
+      "intent": "follow",
+      "readiness_event_s": 2.0,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P4-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": null,
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P4-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": null,
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "P4-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": null,
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {}
+    },
+    {
+      "run_id": "T1-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": "P2-A",
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "L": null
+      }
+    },
+    {
+      "run_id": "T1-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": "P2-B",
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "L": null
+      }
+    },
+    {
+      "run_id": "T1-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": "P2-C",
+      "intent": "left",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "L": null
+      }
+    },
+    {
+      "run_id": "T2-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": "P4-A",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "R": {
+          "x_m": -10.0
+        }
+      }
+    },
+    {
+      "run_id": "T2-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": "P4-B",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "R": {
+          "x_m": -10.0
+        }
+      }
+    },
+    {
+      "run_id": "T2-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": "P4-C",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "R": {
+          "x_m": -10.0
+        }
+      }
+    },
+    {
+      "run_id": "T3-A",
+      "role": "fault",
+      "strategy": "A",
+      "pair_with": "P4-A",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "Bk": {
+          "x_m": -20.0
+        }
+      }
+    },
+    {
+      "run_id": "T3-B",
+      "role": "fault",
+      "strategy": "B",
+      "pair_with": "P4-B",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "Bk": {
+          "x_m": -20.0
+        }
+      }
+    },
+    {
+      "run_id": "T3-C",
+      "role": "fault",
+      "strategy": "C",
+      "pair_with": "P4-C",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": false,
+      "actor_overrides": {
+        "Bk": {
+          "x_m": -20.0
+        }
+      }
+    },
+    {
+      "run_id": "X1-C",
+      "role": "boundary",
+      "strategy": "C",
+      "pair_with": "P4-C",
+      "intent": "follow",
+      "readiness_event_s": null,
+      "left_observation_lost": true,
+      "expand_left_prior_to_middle": true,
+      "actor_overrides": {
+        "F": {
+          "x_m": 10.0
+        },
+        "R": {
+          "x_m": -10.0
+        },
+        "L": {
+          "cut_in_at_s": 1.0,
+          "cut_in_duration_s": 3.5
+        }
+      }
+    }
+  ]
+}

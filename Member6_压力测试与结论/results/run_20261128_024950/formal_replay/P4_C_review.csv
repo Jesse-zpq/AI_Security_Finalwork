@@ -1,0 +1,15 @@
+﻿metric,archived,current,current_source,delta,equal
+outcome,stopped_middle,stopped_middle,archive_replay,,True
+collision,False,False,archive_replay,,True
+initial_action,wait,wait,archive_replay,,True
+initial_deadline_s,4.7,4.7,archive_replay,0.0,True
+final_deadline_s,4.7,4.7,archive_replay,0.0,True
+fallback_s,4.7,4.7,archive_replay,0.0,True
+fallback_action,in_lane_stop,in_lane_stop,archive_replay,,True
+parked_region,middle,middle,archive_replay,,True
+terminal_s,13.7,13.7,archive_replay,0.0,True
+first2s_rear_gap_m,50.907784389596046,50.907784389596046,archive_replay,0.0,True
+full_front_gap_m,28.390784853239406,28.390784853239406,archive_replay,0.0,True
+full_rear_gap_m,50.00509593367606,50.00509593367606,archive_replay,0.0,True
+full_left_gap_m,1.5118527537056647,1.5118527537056647,archive_replay,0.0,True
+full_right_gap_m,1.5122768519540042,1.5122768519540042,archive_replay,0.0,True

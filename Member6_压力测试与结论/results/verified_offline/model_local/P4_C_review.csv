@@ -1,0 +1,15 @@
+﻿metric,archived,current,current_source,delta,equal
+outcome,stopped_middle,stopped_middle,local_model,,True
+collision,False,False,local_model,,True
+initial_action,wait,wait,local_model,,True
+initial_deadline_s,4.7,4.7,local_model,0.0,True
+final_deadline_s,4.7,4.5,local_model,-0.20000000000000018,False
+fallback_s,4.7,4.5,local_model,-0.20000000000000018,False
+fallback_action,in_lane_stop,in_lane_stop,local_model,,True
+parked_region,middle,middle,local_model,,True
+terminal_s,13.7,13.5,local_model,-0.1999999999999993,False
+first2s_rear_gap_m,50.907784389596046,50.82427438437613,local_model,-0.08351000521991381,False
+full_front_gap_m,28.390784853239406,26.63600930615948,local_model,-1.7547755470799267,False
+full_rear_gap_m,50.00509593367606,50.04112893221045,local_model,0.03603299853438813,False
+full_left_gap_m,1.5118527537056647,1.8,local_model,0.2881472462943353,False
+full_right_gap_m,1.5122768519540042,1.8,local_model,0.28772314804599586,False

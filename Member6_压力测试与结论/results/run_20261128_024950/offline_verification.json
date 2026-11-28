@@ -1,0 +1,16 @@
+{
+  "formal_exact_replays": 16,
+  "new_model_runs": 16,
+  "required_pressure_runs": 9,
+  "combined_counterexample_runs": 1,
+  "independent_reference_runs": 1,
+  "additional_paired_reference_runs": 5,
+  "branch_matches": 16,
+  "deadline_audit_points": 38,
+  "deadline_audit_matches": 38,
+  "teammate_metric_checks": 384,
+  "teammate_metric_matches": 384,
+  "teammate_mismatches": [],
+  "requires_carla": false,
+  "new_runs_use_carla": false
+}
